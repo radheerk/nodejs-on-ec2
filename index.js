@@ -1,4 +1,4 @@
-const port = process.env.PORT || 80
+const port = process.env.PORT || 3000
 const http = require('http');
 const array = ['Hello', 'World'];
 const server = http.createServer((req, res) => {
