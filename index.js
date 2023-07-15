@@ -1,3 +1,4 @@
+const port = process.env.PORT || 80
 const http = require('http');
 const array = ['Hello', 'World'];
 const server = http.createServer((req, res) => {
@@ -10,6 +11,5 @@ const server = http.createServer((req, res) => {
     res.end('404 Not Found');
   }
 });
-server.listen(3000, () => {
-  console.log('Server listening on port 3000');
-});
+server.listen(port);
+console.log('Server running at port http://52.90.113.2:'+port+'/helloworld');
